@@ -1,0 +1,234 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 1
+   Case Problem 1
+   Filename: jtc_layout.css
+
+   This file contains the layout styles used in the JTC website
+
+*/
+
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+
+
+html {
+	height: 100%;
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	margin: 0px auto auto auto;
+	width: 100%;
+	position: relative;
+	background-color: white;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+
+body > header nav {
+	display: block;
+	text-align: right;
+	width: 100%;
+	height: 28px;
+	background-color: #b5cc88;
+	border-bottom: 2px solid #0084bf;
+}
+
+body > header > nav ul li {
+	display: inline;
+	padding-right: 25px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #EFEFEF;
+}
+
+body > header > nav ul li a {
+	color: #EFEFEF;
+	text-decoration: none;
+	letter-spacing: 0.25em;
+}
+
+body > header > nav ul li a:visited {
+	color: #EFEFEF;
+}
+
+
+body > header > nav ul li a:hover {
+	color: #ffff80;
+}
+
+body > header > nav ul li a:active {
+	color: #ffff80;
+}
+
+article {
+	position: relative;
+	display: block;
+}
+
+article header img {
+	display: block;
+	width: 100%;
+}
+
+article p {
+    margin-left: 20px;
+	margin-right: 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 0.9em;
+}
+
+article address {
+	margin: 50px 0px 0px 50px;
+	font-style: normal;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	padding-bottom: 20px;
+	font-size: 0.9em;
+}
+	
+aside {
+	display: none;
+}
+
+
+body > h1 {
+	font-size: 1.7em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 5px;
+}
+
+body > h2 {
+	font-size: 1.1em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-left: 15px;
+}
+
+body > p {
+	font-size: 0.9em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-left: 15px;
+}
+
+body > img {
+	width: 100%;
+}
+
+footer {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align: center;
+	font-size: 0.7em;
+	border-top: 2px solid #73DF6B;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/* =============================================
+	Tablet layout styles used by devices
+	601px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+
+@media only screen and (min-width: 601px) {
+
+body {
+	min-height: 100%;
+}
+
+body > header nav ul {
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+
+article {
+	margin-left: 250px;
+}
+
+article p {
+	font-size: 1.1em;
+}
+
+
+article header img {
+	position: inherit;
+	width: 100%;
+	display: block;
+}
+
+
+aside {
+	display: block;
+	float: left;
+	width: 250px;
+	background-color: #a29d96;
+	margin-top: -30px;
+}
+
+aside blockquote {
+	width: 80%;
+	color: white;
+	margin: 10px auto 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 0.9em;
+}
+
+article address {
+	font-size: 1.1em;
+}
+
+body > h1 {
+	margin-left: 20px;
+	font-size: 2.5em;
+}
+
+body > h2 {
+	margin-left: 30px;
+	font-size: 1.5em;
+}
+
+body > p {
+	margin-left: 30px;
+	font-size: 1em;
+}
+
+body > img {
+	width: 50%;
+	float: right;
+	margin: 0px 10px 10px 10px;
+}
+
+footer {
+	font-size: 1em;
+}
+
+}
+
+/* =============================================
+	Desktop layout styles used by  devices
+	769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+
+html {
+	background-color: #92ad57;
+}
+
+body {
+	width: 90%;
+	max-width: 1020px;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+}
