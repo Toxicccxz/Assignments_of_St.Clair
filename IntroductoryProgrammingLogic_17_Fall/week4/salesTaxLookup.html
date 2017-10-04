@@ -1,0 +1,71 @@
+<html>
+<head>
+<script type= "text/javascript">
+
+var cents = 0;
+var tax = 0;
+var ES = "";
+var BR = "</br>";
+
+
+function displayMessage(){
+
+     cents = document.CENTS.numOfCents.value;
+	 cents = parseInt(cents);
+	 texSwitch(cents);
+
+	
+	 document.CENTS.showTax.value = "The tax is " + tax + " " + "cents";
+	
+}
+
+function texSwitch(cents) {
+	 switch(true) 
+	{ 
+	case cents > 0 && cents < 8: 
+	tax = 0;
+	break; 
+	case cents >= 8 && cents < 22: 
+	tax = 1;
+	break; 
+	case cents >= 22 && cents < 36: 
+	tax = 2;
+	break; 
+	case cents >= 36 && cents < 50: 
+	tax = 3;
+	break; 
+	case cents >= 50 && cents < 65: 
+	tax = 4;
+	break; 
+	case cents >= 65 && cents < 79: 
+	tax = 5;
+	break; 
+	case cents >= 79 && cents < 93: 
+	tax = 6;
+	break; 
+	case cents >= 93 && cents < 99: 
+	tax = 7;
+	break; 
+	case cents > 99: 
+	alert("ERROR!"); 
+	break; 
+
+	default:; 
+	}
+}
+
+</script>
+</head> 
+<!--3 buttons to change flowers-->
+	<body>
+	<form name="CENTS" action="">
+		<input type="text" name="numOfCents" value="Input the number of cents" size="40"><br />
+
+		<input type="button" name="showTaxBtn" value="show tax" onclick="displayMessage()"  /><p/> 
+
+
+		<input type="text" name="showTax" readonly="true" size="40" ><br />
+
+		</form>
+	</body>
+</html>

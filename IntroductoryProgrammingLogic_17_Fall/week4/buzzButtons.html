@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+
+	// Program name	: buildingPriceInc.txt
+	// Purpose		:
+	// deductions	: display all information
+	// Author		: Xinzhou.Cui
+	// Date			: 15-09-2017
+	// Section Number:
+	
+var nameOfButton = "";
+var emailAddress = "";
+var numOfButton;
+var totalPrice;
+var totalTax;
+var totalShippingRate = 2;
+var allYouPay;
+
+var ES = "";
+var BR = "<br />";  //HTML Line break
+
+
+document.write("Welcome to buzzButttons System ", BR);
+
+nameOfButton = prompt("Input your name", ES);
+
+emailAddress = prompt("Input your email address", ES);
+
+numOfButton = prompt("How many buttons you want?", ES);
+numOfButton = parseFloat(numOfButton);
+totalPrice = numOfButton * 0.99;
+totalTax = totalPrice * 0.06;
+allYouPay = totalPrice+totalTax+totalShippingRate;
+
+
+document.write("Your name: ", nameOfButton + BR);
+document.write("Your email address: ", emailAddress + BR);
+document.write("Numbers of buttons you want: ", numOfButton + BR);
+document.write("Total price: ", "$" + totalPrice + BR);
+document.write("TotalTax: ", "$" + totalTax + BR);
+document.write("Shipping rate: ", "$" + totalShippingRate + BR);
+document.write("All you should pay: ", "$" + allYouPay + BR);
+</script>
+</body>
+</html>

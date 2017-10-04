@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+
+	// Program name	: buildingPriceInc.txt
+	// Purpose		:
+	// deductions	: display all information
+	// Author		: Xinzhou.Cui
+	// Date			: 15-09-2017
+	// Section Number:
+
+var priceOf2010;
+var priceOf2011;
+var diff;
+
+var ES = "";
+var BR = "</br>";
+
+// display program heading
+document.write("Welcome to BuildingPriceInc System ", BR);
+alert("Welcome to BuildingPriceInc System ", ES);
+
+priceOf2010 = prompt(" Input the January 2010 price", ES);
+priceOf2010 = parseFloat(priceOf2010);
+document.write("the January 2010 price is ", priceOf2010 + BR);
+
+priceOf2011 = prompt("Input the January 2011 price", ES);
+priceOf2011 = parseFloat(priceOf2011);
+document.write("the January 2011 price is ", priceOf2011 + BR);
+
+if (priceOf2010 > priceOf2011) {
+	diff = (priceOf2010 - priceOf2011) / priceOf2010 * 100;
+	alert("The price has decreased by " + diff + "%");
+	document.write("The price has decreased by ", diff + "%" + BR);
+} else {
+	if (priceOf2010 < priceOf2011) {
+		diff = (priceOf2011 - priceOf2010) / priceOf2010 * 100;
+		alert("The price has increased by " + diff + "%");
+		document.write("The price has increased by ", diff + "%" + BR);
+	} else {
+		if (priceOf2010 = priceOf2011) {
+			alert("The price does not change");
+			document.write("The price does not change", BR);
+		}
+	}
+}
+
+document.write("Thanks for using BuildingPriceInc System ", BR);
+</script>
+</body>
+</html>

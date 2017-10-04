@@ -1,0 +1,54 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+ <html>
+ <body>
+ <script type = "text/javascript">
+
+	// Program name	: autoSalesStats.txt
+	// Purpose		:
+	// deductions	: display all information
+	// Author		: Xinzhou.Cui
+	// Date			: 15-09-2017
+	// Section Number:
+
+var salesFigures01;
+var salesFigures02;
+var salesFigures03;
+var salesFigures04;
+var totalSales;
+var averageSales;
+
+var ES = "";
+var BR = "</br>";
+
+// display program heading
+document.write("Welcome to autoSalesStats System ", BR);
+alert("Welcome to autoSalesStats System ", ES);
+
+salesFigures01 = prompt(" Input the sales figure of 1st quarte", ES);
+salesFigures01 = parseFloat(salesFigures01);
+document.write("the sales figure of 1st quarte is ", salesFigures01 + BR);
+
+salesFigures02 = prompt(" Input the sales figure of 1st quarte", ES);
+salesFigures02 = parseFloat(salesFigures02);
+document.write("the sales figure of 1st quarte is ", salesFigures02 + BR);
+
+salesFigures03 = prompt(" Input the sales figure of 1st quarte", ES);
+salesFigures03 = parseFloat(salesFigures03);
+document.write("the sales figure of 1st quarte is ", salesFigures03 + BR);
+
+salesFigures04 = prompt(" Input the sales figure of 1st quarte", ES);
+salesFigures04 = parseFloat(salesFigures04);
+document.write("the sales figure of 1st quarte is ", salesFigures04 + BR);
+
+totalSales=salesFigures01+salesFigures02+salesFigures03+salesFigures04;
+averageSales=totalSales/4;
+
+document.write("The total sales for the year is", totalSales+BR);
+document.write("The average quarterly sales for the year is", averageSales+BR);
+document.write("Thanks for using autoSalesStats System ", BR);
+
+ </script>
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type= "text/javascript">
+
+var flowerName="";
+var BR = "<br />";  //HTML Line break
+var PA = "<p />";   //HTML paragraph break 
+
+function setFlower(newFlower){
+flowerName = newFlower;
+}
+
+function displayMessage(){
+
+	var name = document.YourName.Name.value;
+	
+	document.YourName.Thanks.value = name + "," + " " + "thank you for your inquiry about" + " " + flowerName; 
+	
+}
+</script>
+</head> 
+<!--3 buttons to change flowers-->
+	<body>
+	<form name="YourName" action="">
+		<!--text boxes for  name-->
+		<input type="text" name="Name" value="Enter your name" size="40"><br />
+		
+		<input type="radio" name="flowers" value="Roses" onclick="setFlower(this.value)" />Roses<br/>
+		<input type="radio" name="flowers" value="Carnations"   onclick="setFlower(this.value)"/>Carnations<br/>
+		<input type="radio" name="flowers" value="Daisies"  onclick="setFlower(this.value)" />Daisies<br/>
+
+		<input type="button" name="changeflowers" value="Request Info" onclick="displayMessage()"  /><p/> 
+
+
+		<input type="text" name="Thanks" readonly="true" size="80" ><br />
+
+		</form>
+	</body>
+</html>
