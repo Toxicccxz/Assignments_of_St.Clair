@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+
+
+	// Author		: Xinzhou.Cui
+	// Date			: 06-10-2017
+
+	
+var yourName = "";
+var numOfBirdsEachHour;
+var totalHour = 3;
+var allBirdsNum;
+
+var ES = "";
+var BR = "<br />";  //HTML Line break
+
+
+document.write("Welcome to the MIT153-Birding Calculator! ", BR);
+
+yourName = prompt("Input your name", ES);
+numOfBirdsEachHour = prompt("Input your number of birds viewed for each hour", ES);
+numOfBirdsEachHour = parseFloat(numOfBirdsEachHour);
+allBirdsNum = totalHour * numOfBirdsEachHour;
+
+
+document.write("Our Bird Watcher ", yourName + ", Saw a total of " + allBirdsNum + " birds" + BR);
+document.write("The average number of birds was ", numOfBirdsEachHour + " per hour." + BR);
+document.write("Thank you for using the Birding Calculator.", BR);
+
+</script>
+</body>
+</html>

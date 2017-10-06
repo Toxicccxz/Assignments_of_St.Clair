@@ -1,0 +1,34 @@
+//Program Name : Birding Caculator
+//Purpose: 
+//Author : Xinzhou.Cui
+//Student Id: 0712516
+//Date: 06/10/2017
+
+
+start
+Display "Welcome to the MIT153-Birding Calculator!"
+
+// Declare variables
+Declare string yourName                 //user's name
+Declare numeric numOfBirdsEachHour      //num Of Birds Each Hour
+Declare numeric totalHour               //total hour
+Declare numeric allBirdsNum             //the number of all birds
+
+// get the input from the user
+Display "Input your name "
+Input yourName
+
+Display "Input your number of birds viewed for each hour"
+Input numOfBirdsEachHour
+
+// Calculate
+allBirdsNum = totalHour * numOfBirdsEachHour
+
+// Display
+Display "Our Bird Watcher " + yourName + ", Saw a total of " + allBirdsNum + " birds"
+Display "The average number of birds was " + numOfBirdsEachHour + " per hour."
+
+//close program 
+Display "Thank you for using the Birding Calculator."
+
+STOP
