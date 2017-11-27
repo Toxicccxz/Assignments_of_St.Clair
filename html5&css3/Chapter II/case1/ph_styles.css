@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Xinzhou Cui
+   Date:   
+   
+   Filename: ph_styles.css
+
+*/
+
+
+/* Structural Styles */
+html {
+background-color: hsl(91, 8%, 56%);
+}
+body {
+background-color: hsl(58, 31%, 84%);
+font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+header {
+background-color: black;
+}
+body > p {
+text-align: center;
+font-size: 1.1em;
+}
+address {
+font-style: normal;
+text-align: center;
+font-size: 0.9em;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+/* Navigation Styles */
+nav a {
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+nav a:link, nav:visited {
+color: white;
+text-decoration: none;
+background-color: hsla(0,0%,42%,0.4);
+}
+nav a:hover, nav a:active {
+color: hsla(0,0%,100%,0.70);
+background-color: hsla(0, 0%, 42%, 0.7);
+}
+/* Section Styles */
+section.playbill h1 {
+margin: 0px;
+padding: 20px 0px 10px 20px;
+font-weight: normal;
+font-size: 3em;
+}
+section#play1 {
+background-color: hsl(240, 100%, 88%);
+}
+section#play1 h1 {
+font-family: Champagne, cursive;
+}
+section#play2 {
+background-color: hsl(25, 88%, 73%);
+}
+section#play2 h1 {
+font-family: Grunge, 'Times New Roman', Times, serif;
+}
+section#play3 {
+background-color: hsl(0, 100%, 75%);
+}
+section#play3 h1 {
+font-family: Impact, Charcoal, sans-serif;
+}
+section#play4 {
+background-color: hsl(296, 86%, 86%);
+}
+section#play4 h1 {
+font-family: Dobkin, cursive;
+}
+/* Definition List Styles */
+dt {
+color: hsla(0, 0%, 0%, 0.4);
+font-weight: bold;
+font-size: 1.3em;
+}
+dd {
+font-size: 1.3em;
+margin-left: 0px;
+margin-bottom: 10px;
+} 
+
+
+
+
+/* Navigation Styles */
+
+
+
+
+/* Section Styles */
+
+
+
+
+/* Description List Styles */
+
