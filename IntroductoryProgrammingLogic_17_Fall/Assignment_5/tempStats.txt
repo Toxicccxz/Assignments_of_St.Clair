@@ -1,0 +1,40 @@
+//Program Name : Temperature Recorder
+//Purpose: 
+//Author : Xinzhou.Cui
+//Student Id: 0712516
+//Date: 28/11/2017
+
+start 
+Display "Welcome to the Temperature Recorder!"
+
+// Declare variables
+Declare numeric tempRe     //the temperature recorded
+Declare numeric tempLast     //the temperature last time recorded
+Declare numeric tempHi     //the highest temperature
+Declare numeric tempLo     //the lowest temperature
+
+// get the input from the user
+Display "Input today's temperature"
+Input tempRe
+tempHi = tempRe
+tempLo = tempRe 
+
+// compare
+For count 1 to 5
+tempLast = tempRe
+Display "Input today's temperature"
+Input tempRe
+
+If tempRe >= tempLast
+tempHi = tempRe
+ELSE
+tempRe < lempLast
+tempLo = tempRe
+End If
+
+End For
+
+Display "Now the highest temperature is tempHi"
+Display "Now the lowest temperature is tempLo"
+
+STOP
