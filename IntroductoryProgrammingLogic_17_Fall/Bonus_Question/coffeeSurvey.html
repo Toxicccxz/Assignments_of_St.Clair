@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+	// Author		: Xinzhou.Cui
+	// Date			: 28/11/2017
+	
+var cardMor = 0;
+var cardAfter = 0;
+var cardNigh = 0;
+var cardTotal = 0;
+var card = 0;
+
+var ES = "";
+var BR = "<br />";  //HTML Line break
+
+document.write("Welcome to the system!", BR);
+
+while (card != 5) {
+	card = prompt("Input the information of this card, 1 for morning, 2 for afternoon, 3 for night, input 4 if all card has been input", ES);
+	if (card == 1) {
+		cardMor++;
+	} else if (card == 2) {
+		cardAfter++;
+	} else if (card == 3) {
+		cardNigh++;
+	} else if (card == 4) {
+		card = 0;
+		card = prompt("Sure about that? Input 4 again for sure", ES);
+		if (card == 4) {
+			cardTotal = cardMor + cardAfter + cardNigh;
+			break;
+		}
+	}
+}
+
+document.write("The number of cards of morning is  " + cardMor + BR);
+document.write("The number of cards of afternoon is  " + cardAfter + BR);
+document.write("The number of cards of evening is  " + cardNigh + BR);
+document.write("The number of all cards is  " + cardTotal + BR);
+</script>
+</body>
+</html>
