@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<script type="text/javascript">
+	// Author		: Xinzhou.Cui
+ 
+var grade ;
+var absences;
+
+var ES = "";
+var BR = "<br />";  //HTML Line break
+ 
+ grade=prompt("What your percentage for classwork");
+ grade=parseInt(grade);
+ 
+ absences=prompt("How many absences do you have");
+ absences=parseInt(absences);
+ 
+ if(absences >5){
+ document.write("Sorry you failed", BR);
+ end;
+ }
+ else if(absences <=2){
+grade = grade + 3;
+ }
+ 
+ if (grade  <  60){
+document.write("You got an F");
+}
+else if(grade >= 60 && grade <= 69.9){
+document.write("You got a D");
+ }
+ else if(grade>= 70 && grade<= 79.9) {
+ document.write("You got a C");
+ }
+ else if(grade >= 80 && grade<= 89.9){
+ document.write("You got a B");
+ }
+ else if(grade >= 90) {
+ document.write("You got an A");
+ }
+ 
+ </script>
+ </head>
+ </html>
+
+ 
+ 

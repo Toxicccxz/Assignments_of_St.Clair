@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<script type="text/javascript">
+	// Author		: Xinzhou.Cui
+		
+var score;
+var alumnus;
+var income;
+var accepted;
+
+var ES = "";
+var BR = "<br />";  //HTML Line break
+
+score=prompt("Please enter your the SAT score", ES);
+score=parseInt(score);
+
+if (score < 1200) {
+	document.write("Sorry you have not been admitted", BR);
+  accepted = "N"
+  end;
+}
+
+alumnus=prompt("Is one of ur parent an alumunus?(Y/N)", ES);
+income=prompt("How much is your family income?", ES);
+income = parseInt(income);
+
+if (score >= 1400)  {
+  document.write("Congratulations you have been admitted", BR);
+  accepted = "Y";
+  }
+	else if(score >= 1200 && alumnus == "Y" ) {
+	document.write("Congratulations you have been admitted ", BR);
+	accepted = "Y";
+	} 
+  else if(score >= 1200 && income >= 100000 ) {
+  document.write("Congratulations you have been admitted", BR);
+   accepted = "Y";
+  }
+  else {
+  document.write("Sorry you have not been admitted", BR);
+  accepted = "N"
+  }
+  if ( accepted == "Y" && income < 100000 ){
+  document.write("Congratulations you have been granted a scholarship", BR);
+}  
+
+  
+  </script>
+  </head>
+  </html>
+  
