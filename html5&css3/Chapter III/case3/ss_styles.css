@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 3
+   
+   Typographical Style Sheet for A Soldier's Scrapbook
+   
+   Filename: ss_styles.css
+
+*/
+
+/* General Styles */
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+html {
+   background-color: white;
+}
+
+
+/* Body Styles */
+
+body {
+   margin-left: auto;
+   margin-right: auto;
+   background-color: rgb(213, 191, 154);
+   font-family: Verdana, Geneva, Arial, sans-serif; 
+   font-size: 16px;   
+   width: 1152px;
+}
+
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontal ul li {
+   background-color: rgb(96, 87, 70);
+   display: block;
+   font-size: 15px;
+   float: left;
+   line-height: 30px;
+   height: 30px;
+   width: 192px;
+}
+
+nav.horizontal a {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+}
+   
+nav.horizontal a:link, nav.horizontal:visited {
+   color: rgb(216, 194, 157);
+}
+
+nav.horizontal a:hover, nav.horizontal:active {
+   background-color: rgb(62, 56, 45);
+}
+
+
+/* Footer Styles */
+
+body > footer {
+   background-color: rgb(62, 56, 45);
+   clear: both;
+   color: rgb(216, 194, 157);
+   font-size: 12px;
+   line-height: 24px;
+   text-align: center;
+}
+
+
+/* Article Styles */
+
+body > article {
+   background-color: rgb(182, 163, 132);
+}
+
+body > article > h1 {
+   font-size: 1.5em;
+   margin: 20px;
+}
+
+body > article > p {
+   margin: 20px;
+}  
+
+
+
+/* Aside Styles */
+
+body > aside {
+   float: left;
+   width: 768px;
+}
+
+body > aside > h1 {
+   font-size: 1.5em;
+   margin: 20px;
+}
+
+aside p {
+   line-height: 1.4em;
+   margin: 20px;
+}
+
+
+/* Interactive Map Styles */
+
+div.mapInfo {
+   background-color: rgb(144, 24, 26);
+   color: rgb(214, 192, 144);
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+div.mapInfo h2 {
+   background-color: rgb(96, 87, 70);
+   font-size: 22px;
+   font-weight: normal;
+   padding: 10px 20px;
+}

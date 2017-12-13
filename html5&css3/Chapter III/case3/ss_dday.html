@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 3
+   
+   Normandy Invasion Day 1 Page
+   Author: Xinzhou Cui
+   Date: 
+   
+   Filename: ss_dday.html
+   -->
+   <meta charset="utf-8" />
+   <title>Normandy Invasion: Day 1</title>
+   <link rel="stylesheet" href="ss_layout.css"
+   <link rel="stylesheet" href="ss_styles.css"
+</head>
+
+<body>
+   <header>
+      <img src="ss_logo.png" alt="A Soldier's Scrapbook" />
+      <nav class="horizontal">
+         <ul>
+            <li><a href="#">Blitzkrieg</a></li>
+            <li><a href="#">Battle of Britain</a></li>
+            <li><a href="#">Normandy Invasion</a></li>
+            <li><a href="#">Market Garden</a></li>
+            <li><a href="#">Fall of Berlin</a></li>
+            <li><a href="#">Postwar Upheaval</a></li>
+         </ul>
+      </nav>
+   </header>
+   <article>
+      <h1>The Normandy Invasion</h1>
+      <p>The invasion on the beaches of Normandy on June 6, 1944, was the largest air, land, and sea operation 
+         undertaken before or since June 6, 1944. <em>Operation Overlord</em> involved over 150,000 service
+         men stationed on over 5,000 ships and 11,000 airplanes. The initial wave of soldiers on the beaches
+         had to cover over 200 yards of small-arms fire and artillery before reaching any protection.
+         Casualties were immense: 4000 men died on the beaches, 6000 were wounded.</p>
+      <p>The landing beaches were intended to provide footholds that would allow rapid reinforcement and expansion 
+         inland by joining the beach flanks to create a continuous perimeter before the enemy could mount a 
+         major counter-attack. Each beach would be assaulted by approximately one army division, with 
+         initial landings made from 6:30 a.m. to 7:30 a.m. Their beach landings followed bombardment by 
+         ships' guns and aircraft ordnance, kept brief to maintain as much as possible of the element of 
+         surprise. As a result, German shore defenses remained intact and a threat to the landing forces.</p>
+      <p>Supporting the beach landings, especially at Omaha Beach, the U.S. 82nd and 101st Airborne Divisions 
+         descended behind enemy lines in the early hours of D-Day. Though badly scattered and lacking much of 
+         their equipment, the paratroopers kept the Germans occupied and helped ensure that the beach assaults 
+         were successful. By nightfall on the sixth of June, the beaches were secured and the liberation of 
+         the European continent had begun.</p>
+   </article>
+   <aside>
+      <h1>Interactive Map</h1>
+      <p>Hover the pointer over the battle markers <img src="ss_marker.png" alt="" /> in the map to
+         view more detailed information about each landing site.</p>
+         
+      <div id="battleMap">
+         <img src="ss_map.png" id="mapImage" alt="battle map" />
+         <a id="marker1" class="battleMarkers" href="#marker1"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info1">
+            <h2>Sainte-M&egrave;re-&Eacute;glise</h2>
+            <p>The 82nd Infantry Division mistakenly landed directly in the town of Sainte-M&egrave;re-&Eacute;glise 
+               at 1:40 a.m., resulting in heavy casualties. Burning buildings illuminated the night sky, making
+               the defenseless paratroopers easy targets and the down-draft from the flames sucked several men
+               into the fires. Other troopers were caught hanging from trees and utility poles and shot before 
+               they could cut themselves loose.</p>
+            <p>However, the Germans were confused by conflicting reports of allied landings and attacks and
+               retired in the middle of the night. This contributed to the ease by which the 505th PIR took
+               the town by 5:00 a.m. The lightly armed troops held the town against heavy German 
+               counter-attacks, finally securing it on June 7th with help from tanks sent from nearby
+               Utah Beach.</p>
+         </div>
+         
+         <a id="marker2" class="battleMarkers" href="#marker2"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info2">
+            <h2>Utah Beach</h2>
+            <p>Utah Beach was a staging area to secure the important port facilities at Cherbourg. It was added
+               later in the D-Day planning and necessitated a month-long delay for the assembly of additional l
+               landing crafts. Troops landed in four waves beginning at 6:30 a.m. and were met with minimal
+               resistance. The 4th Infantry Division landed 21,000 troops on Utah suffering only 197 casualties.
+               By the end of June 6th, Allied forces had captured only about half of their objectives,
+               but the beachhead was secure and could be used as an important staging area in subsequent days.</p>
+            <p>Cherbourg was captured on June 26, but only after the Germans had destroyed the port facilities.
+               The port was not fully operational until September.</p>
+         </div>
+         
+         <a id="marker3" class="battleMarkers" href="#marker3"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info3">
+            <h2>Omaha Beach</h2>
+            <p>Very little went according to plan at Omaha Beach. Most of the landing craft missed
+               their targets and came up against unexpectedly-strong opposition. Under heavy fire,
+               army engineers worked to clear beach obstacles but the time required to clear the
+               beach caused subsequent landing crafts to bunch up and obstruct the clear landing
+               channels.</p>
+            <p>Eventually small groups of survivors were able to improvise an assault on the
+               entrenched German troops. By the end of June 6, two isolated footholds on the beach
+               were achieved and were exploited over the next several days as the invasion forces
+               moved inland.</p>
+         </div>
+         
+         <a id="marker4" class="battleMarkers" href="#marker4"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info4">
+            <h2>Gold Beach</h2>
+            <p>The British landing at Gold Beach was designed to link up with forces at Omaha Beach and 
+               move inland to Bayeux. High winds made it difficult to establish a beachhead and the
+               amphibious assault did not begin until 7:30 a.m. However heavy bombardment disabled
+               three of the four large German guns covering the beach.</p>
+            <p>Due to stiff German resistance, Bayeux was not captured until June 7. British casualties 
+               at Gold are estimated at 1,000–1,100. German casualties are unknown.</p>
+         </div>
+         
+         <a id="marker5" class="battleMarkers" href="#marker5"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info5">
+            <h2>Juno Beach</h2>
+            <p>The objective at Juno ws to seize the Carpiquet airport west of Caen and link up 
+               with the invasion forces at Gold and Sword. The beach was defended by two German 
+               battalions and a panzer division, making it the second most heavily defended beaches
+               on D-Day.</p>
+            <p>The landings encountered heavy early resistance and early ship bombardment was ineffective at 
+               breaking up the German forces. The push inland towards Carpiquet achieved mixed results with
+               the sheer number of forces on the beach delaying reinforcements. However by 11 p.m., the
+               invasion force had reached its objectives and succeeded in pushing farther 
+               inland than any other landing force on D-Day.</p>
+         </div>
+         
+         <a id="marker6" class="battleMarkers" href="#marker6"><img src="ss_marker.png" alt="" /></a>
+         <div class="mapInfo" id="info6">
+            <h2>Sword Beach</h2>
+            <p>Sword was the easternmost landing site of the Normandy Invasion. Sword was divided into 
+               several sectors with each sector divided into beaches. Sword is located about 9 miles
+               from Caen, the goal of the 3rd Infantry Division.</p>
+            <p>The Sword landing suffered few casualties but it's route inland suffered from traffic
+               congestion that limited the invasion's effectiveness. Troops at Sword experienced the
+               only armour counter-attack of D-Day, mounted by the 21st Panzer Division.</p>
+         </div>
+      </div>
+   </aside>
+   
+   <footer>Raleigh Veteran's Museum</footer>
+</body>
+</html>

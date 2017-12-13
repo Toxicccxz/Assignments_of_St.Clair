@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 3
+   
+   Layout Style Sheet for A Soldier's Scrapbook
+   Author: Xinzhou Cui
+   Date:  
+   
+   Filename: ss_layout.css
+
+*/
+
+
+/* Article Styles */
+float: left;
+width: 384px;
+
+/* First Line and Drop Cap Styles */
+article p:first-of type::first-line {
+	font-size: 1.25em ;
+	Font-variant: small-caps ;
+}
+article p:first-of-type::first-letter{
+	font-size: 4em;
+	font-family: serif;
+	float: left;
+	line-height: 0.8em;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	
+ 
+
+/* Aside Styles */
+aside{
+	width: 768px;
+	float: left;
+
+
+
+/* Map Styles */
+#battlemap{
+	width: 688px;
+	margin: 20px auto;
+	position: relative;
+}
+ #mapimage{
+	 display: block;
+	 width: 100%;
+ }
+ 
+
+
+/* Interactive Map Styles */
+a.battlemarkers{
+	position: absolute ;
+}
+#marker1(top:220px;left:340px;)
+#marker2(top:194px;left:358;)
+#marker3(top:202px;left:400px;)
+#marker4(top:217px;left:452px;)
+#marker5(top:229px;left:498px;)
+#marker6(top:246px;left:544px;)
+
+
+/* Map Information Styles */
+.mapinfo{
+	display:none ;
+}
+a.battleMarkers:hover +div.mapInfo.{
+	display:block;
+}
+
