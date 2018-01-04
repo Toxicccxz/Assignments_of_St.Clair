@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   
+   Author: Xinzhou Cui
+   Date:  
+   
+   Filename: assignment2.css
+*/
+
+#sectionA{
+	background: linear-gradient(to right, red, blue, red, blue, red);
+}
+
+#sectionB{
+	background: linear-gradient(225deg, black 0%, white 25%);
+}
+
+#sectionC{
+	background: linear-gradient(black 15%, white 40%, white 60%, black 85%);
+}
+
+#sectionD{
+	background: repeating-linear-gradient(to right, red, white 10%);
+}
