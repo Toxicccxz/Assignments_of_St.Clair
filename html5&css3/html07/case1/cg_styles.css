@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 1
+
+   ACGIP General Style Sheet
+  
+   Filename: cg_styles.css
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(51, 51, 51) url(cg_back.png);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   box-shadow: black 20px 0px 40px,  black -20px 0px 40px;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;    
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1020px;  
+   width: 100%;
+}
+
+
+/* Header styles */
+
+header {
+   width: 100%;
+}
+
+header img#logoimg {
+   display: block;
+   width: 100%;
+}
+
+/* Navigation Styles */
+
+nav {  
+   width: 100%;
+}
+
+nav ul {
+   background: linear-gradient(to bottom, black, rgb(44, 70, 44));
+        
+   -moz-column-width: 200px;
+   -webkit-column-width: 200px;
+    column-width: 200px;
+
+   -moz-column-gap: 25px;
+   -webkit-column-gap: 25px;
+    column-gap: 25px;
+    
+    padding: 25px;
+}
+
+nav ul li.newgroup {
+   margin-top: 15px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 0.9em;
+}
+
+nav a:hover {
+   color: rgb(191, 231, 191);
+   text-decoration: underline;
+}
+
+/* Section Styles */
+
+section {
+   background: rgb(245,245,165);
+   -webkit-flex: 2 1 421px;
+   flex: 2 1 421px; 
+   padding: 10px 20px 20px 40px; 
+}
+
+section h1 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+   font-size: 1.8em;
+   margin: 20px 0px 5px;
+   color: rgb(83, 183, 51);
+}
+
+section > p {
+   margin-bottom: 20px;
+   padding-bottom: 9px;
+   border-bottom: 3px solid rgb(83, 183, 51);
+}
+
+
+/* Aside Styles */
+
+aside {
+   background: rgb(144, 170, 144);
+   color: white;
+   -webkit-flex: 1 2 220px;
+   flex: 1 2 220px ;
+   padding: 25px;    
+}
+
+dt {
+   font-size: 1em;
+   border-bottom: 1px solid white;
+   font-weight: bold;
+}
+
+dd {
+   margin-bottom: 25px;
+}
+
+dl a {
+   color: gold;
+}
+
+/* Footer styles */   
+
+footer {
+   color: white;    
+   background: rgb(44, 70, 44);  
+   height: 70px;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 0.9em; 
+   width: 100%;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+   
+   nav {
+      -webkit-order: 99;
+      order: 99;
+   }
+   
+   footer {
+      -webkit-order: 100;
+      order: 100;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+
+}

@@ -1,0 +1,48 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 1
+
+   ACGIP Registration Form Style Sheet
+
+   Filename: cg_forms.css
+
+*/
+
+/* Form Layout Styles */
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 5px;
+   width: 200px;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 200px;
+}
+
+textarea {
+   height: 100px;
+}
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+}
+
+input[type='submit'] {
+   background-color: rgb(144, 170, 144);
+   color: rgb(245,245,165);
+   border-radius: 20px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+}
