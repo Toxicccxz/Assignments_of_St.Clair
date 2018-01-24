@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+var str;
+var character;
+var length;
+var count = 0;
+var ES = "";
+
+str = prompt("Input your string", ES);
+character = prompt("Input the character", ES);
+
+
+var countChar = function(s, c){
+	length = s.length;
+	for(var i = 0; i < length; i++){
+		if(s.charAt(i) == c){
+			count++;
+		}
+	}
+	return count;
+};
+
+countChar(str, character);
+console.log(count);
+
+</script>
+</body>
+</html>
