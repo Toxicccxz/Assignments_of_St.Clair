@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+var length = [];
+var a;
+var b;
+var c;
+var Area;
+var ES = "";
+
+a = prompt("Input long", ES);
+length[0] = a;
+b = prompt("Input width", ES);
+length[1] = b;
+c = prompt("Input high", ES);
+length[2] = c;
+
+var calcArea = function(l){
+	Area = 2*l[0]*l[1] + 2*l[1]*l[2] + 2*l[0]*l[2];
+	return Area;
+}
+
+calcArea(length);
+
+console.log("The size of this box is :" + "\n" + "long : " + length[0] + "\n" + "width : " + length[1] + "\n" + "high : " + length[2] + "\n" +
+"and the surface area is : " + Area);
+
+</script>
+</body>
+</html>
