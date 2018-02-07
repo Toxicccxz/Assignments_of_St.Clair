@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+var movies = [
+	{
+	title: "The Golden Compass",
+	year: 2007,
+	rating: 6,
+	genres: "fantasy",
+	},
+	{
+	title: "Sherlock Holmes",
+	year: 2009,
+	rating: 8,
+	genres: "mystery",
+	},
+	{
+	title: "The Conjuring",
+	year: 2013,
+	rating: 9,
+	genres: "horror",
+	},
+	{
+	title: "The Conjuring 2",
+	year: 2016,
+	rating: 7,
+	genres: "horror",
+	},
+	{
+	title: "Saw",
+	year: 2004,
+	rating: 10,
+	genres: "horror",
+	},
+];
+
+movies.forEach(function(movies) {
+	movies.format = "film"; 
+});
+
+var movieTitles = movies.map(function(movies) {
+	return movies.title;
+});
+
+var lowestRated = movies.reduce(function(min, movies) {
+	if (movies.rating < min.rating)
+		return movies;
+	else
+		return min;
+});
+
+var highestRated = movies.reduce(function(max, movies) {
+	if (movies.rating > max.rating)
+		return movies;
+	else
+		return max;
+});
+
+var highlyRated = movies.filter(function(movies) {
+	return movies.rating >= 7;
+});
+
+var highestRatedMap = highlyRated.map(function(highlyRated) {
+	return highlyRated.title;
+});
+
+
+console.log("Movie titles: " + movieTitles.join(", ") + "\n"
++ "Highest rated: " + highestRated.title + " " + "(" + highestRated.rating + ")" + "\n"
++ "Lowest rated: " + lowestRated.title + " " + "(" + lowestRated.rating + ")" + "\n"
++ "Highly rated: " + highestRatedMap.join(", "));
+
+</script>
+</body>
+</html>
