@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<body>
+<script type="text/javascript">
+var movies = [
+	{
+	title: "The Golden Compass",
+	year: 2007,
+	rating: 6,
+	genres: ["fantasy", "Sci-Fi"],
+	},
+	{
+	title: "Sherlock Holmes",
+	year: 2009,
+	rating: 8,
+	genres: "mystery",
+	},
+	{
+	title: "The Conjuring",
+	year: 2013,
+	rating: 9,
+	genres: ["horror", "Thriller"],
+	},
+	{
+	title: "The Conjuring 2",
+	year: 2016,
+	rating: 7,
+	genres: ["horror", "Thriller"],
+	},
+	{
+	title: "Saw",
+	year: 2004,
+	rating: 10,
+	genres: "horror",
+	},
+];
+
+
+var sortedMovies = movies.sort(function(a, b) {
+	return a.rating < b.rating ? -1 : 1;
+});
+
+var sortedMoviesTitle = sortedMovies.map(function(sortedMovies) {
+	return [sortedMovies.title + " (" + sortedMovies.rating + ")\n"];
+});
+
+var list = ["horror", "Thriller"];
+var positions = new Array();
+function isInMovies(list, movies) {
+	var pos = list.indexOf(movies.genres);
+	while (pos > -1) {
+		positions.push(pos);
+		pos = list.indexOf(movies.genres, pos + 1);
+	}
+}
+
+var moviesHasGenres = isInMovies.bind(null, list);
+var moviesHasGenres1 = moviesHasGenres(movies);
+
+console.log(positions);
+console.log(sortedMoviesTitle.join("") + moviesHasGenres);
+
+</script>
+</body>
+</html>
